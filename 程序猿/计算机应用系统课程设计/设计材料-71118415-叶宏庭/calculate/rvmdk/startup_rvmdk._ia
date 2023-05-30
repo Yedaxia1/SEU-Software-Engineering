@@ -1,0 +1,6 @@
+--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-I F:\test\calculate\RTE
+-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include
+-I F:\MDK5\ARM\CMSIS\Include
+--pd "__UVISION_VERSION SETA 514" --pd "LM4F232 SETA 1"
+--list .\startup_rvmdk.lst --xref -o .\rvmdk\startup_rvmdk.o --depend .\rvmdk\startup_rvmdk.d "startup_rvmdk.S"

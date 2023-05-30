@@ -1,0 +1,12 @@
+.\rvmdk\step_motor.o: HARDWARE\step_motor.c
+.\rvmdk\step_motor.o: HARDWARE\step_motor.h
+.\rvmdk\step_motor.o: HARDWARE\sys.h
+.\rvmdk\step_motor.o: HARDWARE\lcd.h
+.\rvmdk\step_motor.o: ..\..\..\B实验\inc/hw_gpio.h
+.\rvmdk\step_motor.o: ..\..\..\B实验\inc/hw_memmap.h
+.\rvmdk\step_motor.o: ..\..\..\B实验\inc/hw_types.h
+.\rvmdk\step_motor.o: ..\..\..\B实验\driverlib/gpio.h
+.\rvmdk\step_motor.o: ..\..\..\B实验\driverlib/pin_map.h
+.\rvmdk\step_motor.o: ..\..\..\B实验\driverlib/sysctl.h
+.\rvmdk\step_motor.o: ..\..\..\B实验\driverlib/rom.h
+.\rvmdk\step_motor.o: ..\..\..\B实验\grlib/grlib.h

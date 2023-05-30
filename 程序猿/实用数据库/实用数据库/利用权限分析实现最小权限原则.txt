@@ -1,0 +1,130 @@
+1   创建用户并赋予权限
+CREATE USER priv_test_user IDENTIFIED BY priv_test_user;
+GRANT DBA, RESOURCE TO priv_test_user;
+2   创建捕获
+BEGIN
+  DBMS_PRIVILEGE_CAPTURE.create_capture(
+    name        => 'dba_res_user_pol',
+    type        => DBMS_PRIVILEGE_CAPTURE.g_role_and_context,
+    roles       => role_name_list('DBA', 'RESOURCE'),
+    condition   => 'SYS_CONTEXT(''USERENV'', ''SESSION_USER'') 
+    = ''PRIV_TEST_USER'''
+  );
+END;
+/
+3  启用捕获
+BEGIN
+  DBMS_PRIVILEGE_CAPTURE.enable_capture(
+    name        => 'dba_res_user_pol'
+  );
+END;
+/
+4  用户PRIV_TEST_USER执行一些操作
+CONN priv_test_user/priv_test_user;
+
+CREATE TABLE tab1 (
+  id NUMBER,
+  description VARCHAR2(50),
+  CONSTRAINT tab1_px PRIMARY KEY (id)
+);
+
+CREATE SEQUENCE tab1_seq;
+
+CREATE VIEW tab1_view AS
+SELECT * FROM tab1;
+
+INSERT INTO tab1
+SELECT level, 'Description of ' || TO_CHAR(level)
+FROM   dual
+CONNECT BY level <= 5;
+
+COMMIT;
+
+SELECT name FROM v$database;
+
+5   禁用捕获并产生分析结果
+conn / as sysdba
+BEGIN
+  DBMS_PRIVILEGE_CAPTURE.disable_capture(
+    name        => 'dba_res_user_pol'
+  );
+
+  DBMS_PRIVILEGE_CAPTURE.generate_result(
+    name        => 'dba_res_user_pol'
+  );
+END;
+/
+
+6    从 DBA_USED_PRIVS, DBA_USED_SYSPRIVS or DBA_USED_SYSPRIVS_PATH视图查询被使用到的系统权限
+COLUMN username FORMAT A20
+COLUMN sys_priv FORMAT A20
+
+SELECT username, sys_priv
+FROM   dba_used_sysprivs
+WHERE  capture = 'dba_res_user_pol'
+ORDER BY username, sys_priv;
+
+USERNAME             SYS_PRIV
+-------------------- --------------------
+PRIV_TEST_USER       CREATE ANY INDEX
+PRIV_TEST_USER       CREATE SEQUENCE
+PRIV_TEST_USER       CREATE SESSION
+PRIV_TEST_USER       CREATE TABLE
+PRIV_TEST_USER       CREATE VIEW
+
+7    从DBA_USED_SYSPRIVS_PATH视图查看用户priv_test_user怎么获得这些权限的
+COLUMN username FORMAT A20
+COLUMN used_role FORMAT A30
+COLUMN sys_priv FORMAT A20
+COLUMN path FORMAT A50
+SET LINESIZE 200
+
+SELECT username, sys_priv, used_role, path
+FROM   dba_used_sysprivs_path
+WHERE  capture = 'dba_res_user_pol'
+ORDER BY username, sys_priv;
+
+
+8   从DBA_USED_PRIVS, DBA_USED_OBJPRIVS or DBA_USED_OBJPRIVS_PATH视图查询被使用到的对象权限
+
+COLUMN username FORMAT A20
+COLUMN obj_priv FORMAT A8
+COLUMN object_owner FORMAT A15
+COLUMN object_name FORMAT A20
+COLUMN used_role FORMAT A20
+COLUMN path FORMAT A30
+SET LINESIZE 200
+
+SELECT username, obj_priv, object_owner, object_name, used_role, path 
+FROM   dba_used_objprivs_path
+WHERE  capture = 'dba_res_user_pol';
+
+也可以通过DBA_UNUSED_SYSPRIVS视图查询未使用到的系统权限。
+select sys_priv from DBA_UNUSED_SYSPRIVS where CAPTURE='dba_res_user_pol';
+
+249 rows selected
+
+9   通过分析发现
+1） 所有的权限来源于DBA角色，而不是被赋予直接的权限
+2） resource角色没有被使用
+由于DBA角色有更大的权限，所以解决方案就比较简单了：
+创建一个用户自定义角色，然后将这些权限分配给该角色，并将该角色指派给该用户，完成最小权限原则。
+
+conn / as sysdba
+CREATE ROLE custom_role;
+GRANT CREATE SEQUENCE TO custom_role;
+GRANT CREATE SESSION TO custom_role;
+GRANT CREATE TABLE TO custom_role;
+GRANT CREATE VIEW TO custom_role;
+GRANT SELECT ON SYS.V_$DATABASE TO custom_role;
+
+GRANT custom_role TO priv_test_user;
+REVOKE DBA, RESOURCE FROM priv_test_user;
+
+10   任务完毕，删除捕获
+BEGIN
+  DBMS_PRIVILEGE_CAPTURE.drop_capture(
+    name        => 'dba_res_user_pol'
+  );
+END;
+/

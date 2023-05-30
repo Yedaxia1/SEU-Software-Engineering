@@ -1,0 +1,233 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ye Windows, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  F:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+F:\test\calculate\lcd_hello.uvprojx
+Project File Date:  06/11/2021
+
+<h2>Output:</h2>
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'Target 1'
+assembling startup_rvmdk.S...
+compiling lcd.c...
+HARDWARE\sys.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\lcd.c(256): warning:  #177-D: variable "ulCount" was declared but never referenced
+     unsigned long ulClockMS,ulCount;
+HARDWARE\lcd.c(257): warning:  #177-D: variable "usController" was declared but never referenced
+      unsigned short usController;
+HARDWARE\lcd.c: 3 warnings, 0 errors
+compiling uart.c...
+HARDWARE\sys.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\uart.c(92): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                LCD_ShowString(114, 180, Rfid_Id);
+HARDWARE\uart.c(97): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                LCD_ShowString(138, 200, Rfid_Value);
+HARDWARE\uart.c(57): warning:  #177-D: variable "ch" was declared but never referenced
+                uint8_t ch = 0, i = 0;
+HARDWARE\uart.c(149): warning:  #1-D: last line of file ends without a newline
+  }
+HARDWARE\uart.c(129): warning:  #550-D: variable "Rfid_Id" was set but never used
+        char Rfid_Id[9];
+HARDWARE\uart.c(130): warning:  #177-D: variable "Rfid_Value" was declared but never referenced
+        char Rfid_Value[35];
+HARDWARE\uart.c(51): warning:  #177-D: variable "temp" was declared but never referenced
+  static unsigned char BufferCount = 0, temp = 0;
+HARDWARE\uart.c: 8 warnings, 0 errors
+compiling key.c...
+HARDWARE\sys.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\key.c: 1 warning, 0 errors
+compiling uartstdio.c...
+compiling PCF8574.c...
+HARDWARE\sys.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\PCF8574.c: 1 warning, 0 errors
+compiling tm1638.c...
+HARDWARE\sys.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\uart.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\tm1638.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif                                                                           
+HARDWARE\tm1638.c(139): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                UARTprintf(temp);
+HARDWARE\tm1638.c(123): warning:  #177-D: variable "key" was declared but never referenced
+        int* key;
+HARDWARE\tm1638.c(282): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);                                                     // 数1打印
+HARDWARE\tm1638.c(283): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);                      // 打印数字1
+HARDWARE\tm1638.c(287): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",1);                                                                // 打印结果2
+HARDWARE\tm1638.c(289): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);           //展示结果表达式
+HARDWARE\tm1638.c(297): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(298): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(302): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",2);
+HARDWARE\tm1638.c(304): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(311): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(312): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(316): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",3);
+HARDWARE\tm1638.c(318): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(325): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(326): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(330): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",4);
+HARDWARE\tm1638.c(332): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(339): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(340): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(344): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",5);
+HARDWARE\tm1638.c(346): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(353): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(354): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(358): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",6);
+HARDWARE\tm1638.c(360): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(367): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(368): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(372): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",7);
+HARDWARE\tm1638.c(374): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(381): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(382): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(386): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",8);
+HARDWARE\tm1638.c(388): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(396): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(397): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(401): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(result2,"%d",9);
+HARDWARE\tm1638.c(403): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(413): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(426): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(439): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(452): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(482): warning:  #223-D: function "sprintf" declared implicitly
+                                                sprintf(cal_str_result,"%d",cal_result);
+HARDWARE\tm1638.c(485): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(491): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(500): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(506): warning:  #223-D: function "sprintf" declared implicitly
+                                                        sprintf(result1,"%d",num1);
+HARDWARE\tm1638.c(507): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                        LCD_ShowString(120, 120, result1);
+HARDWARE\tm1638.c(511): warning:  #223-D: function "sprintf" declared implicitly
+                                                        sprintf(result2,"%d",pre_ans);
+HARDWARE\tm1638.c(513): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                        LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(524): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(537): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+                                                LCD_ShowString(120, 120, expression);
+HARDWARE\tm1638.c(582): warning:  #1-D: last line of file ends without a newline
+  }
+HARDWARE\tm1638.c: 56 warnings, 0 errors
+compiling main.c...
+hardware/sys.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+hardware/bmp085.h(41): warning:  #1295-D: Deprecated declaration bmp085Convert - give arg types
+  void bmp085Convert();
+hardware/bmp085.h(44): warning:  #1295-D: Deprecated declaration DATA_Diplay - give arg types
+  void DATA_Diplay();
+hardware/bmp085.h(49): warning:  #1295-D: Deprecated declaration I2C_Start - give arg types
+  void I2C_Start();
+hardware/bmp085.h(50): warning:  #1295-D: Deprecated declaration I2C_Stop - give arg types
+  void I2C_Stop();
+hardware/bmp085.h(52): warning:  #1295-D: Deprecated declaration I2C_RecvACK - give arg types
+  char I2C_RecvACK();
+hardware/bmp085.h(62): warning:  #1-D: last line of file ends without a newline
+  #endif
+hardware/DC_motor.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+hardware/dht11.h(29): warning:  #1295-D: Deprecated declaration DTH11_IN - give arg types
+  void DTH11_IN();
+hardware/Dot_Matrix.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+hardware/step_motor.h(46): warning:  #1-D: last line of file ends without a newline
+  #endif
+hardware/uart.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+hardware/tm1638.h(45): warning:  #1-D: last line of file ends without a newline
+  #endif                                                                           
+main.c(74): warning:  #223-D: function "TM1638Test" declared implicitly
+                TM1638Test();
+main.c(82): warning:  #1-D: last line of file ends without a newline
+  }
+main.c(47): warning:  #177-D: variable "sContext" was declared but never referenced
+      tContext sContext;
+main.c(48): warning:  #177-D: variable "sRect" was declared but never referenced
+      tRectangle sRect;
+main.c(50): warning:  #177-D: variable "i" was declared but never referenced
+                uint32_t i = 0;
+main.c(34): warning:  #177-D: variable "read_val" was declared but never referenced
+  static uint8_t read_val = 0;
+main.c: 19 warnings, 0 errors
+linking...
+Program Size: Code=13756 RO-data=956 RW-data=1552 ZI-data=616  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output .\rvmdk\lcd_hello.bin .\rvmdk\lcd_hello.axf
+".\rvmdk\lcd_hello.axf" - 0 Error(s), 88 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  F:\test\calculate\RTE
+  F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

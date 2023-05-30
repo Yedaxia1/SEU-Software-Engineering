@@ -1,0 +1,105 @@
+Dependencies for Project 'lcd_hello', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_rvmdk.S)(0x56540A37)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I F:\test\calculate\RTE-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-I F:\MDK5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514" --pd "LM4F232 SETA 1"--list .\startup_rvmdk.lst --xref -o .\rvmdk\startup_rvmdk.o --depend .\rvmdk\startup_rvmdk.d)
+F (.\HARDWARE\lcd.c)(0x5653CFDF)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I..\..\..\×ÛºÏ²âÊÔ -I..\..\..\QFLM4F232 -IE:\QF-LM4F232 -I..\..\QFLM4F232 -I..\inc -I.\HARDWARE -I..\driverlib -I..\grlib -I..\utils -I..\-I F:\test\calculate\RTE-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-I F:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DLM4F232 -Drvmdk -DPART_LM4F232H5QD -DTARGET_IS_BLIZZARD_RA1-o .\rvmdk\lcd.o --omf_browse .\rvmdk\lcd.crf --depend .\rvmdk\lcd.d)
+I (..\inc/hw_gpio.h)(0x567CBA3E)
+I (..\inc/hw_memmap.h)(0x567CBA40)
+I (..\inc/hw_types.h)(0x567CBA46)
+I (..\driverlib/gpio.h)(0x567CBA02)
+I (..\driverlib/pin_map.h)(0x567CBA12)
+I (..\driverlib/sysctl.h)(0x567CBA12)
+I (..\driverlib/rom.h)(0x567CBA10)
+I (..\grlib/grlib.h)(0x567CBA2A)
+I (HARDWARE\lcd.h)(0x5652BF24)
+I (HARDWARE\font.h)(0x5649B15F)
+I (HARDWARE\sys.h)(0x5652B1B1)
+F (.\HARDWARE\uart.c)(0x56554B3D)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I..\..\..\×ÛºÏ²âÊÔ -I..\..\..\QFLM4F232 -IE:\QF-LM4F232 -I..\..\QFLM4F232 -I..\inc -I.\HARDWARE -I..\driverlib -I..\grlib -I..\utils -I..\-I F:\test\calculate\RTE-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-I F:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DLM4F232 -Drvmdk -DPART_LM4F232H5QD -DTARGET_IS_BLIZZARD_RA1-o .\rvmdk\uart.o --omf_browse .\rvmdk\uart.crf --depend .\rvmdk\uart.d)
+I (..\utils/uartstdio.h)(0x564D82FB)
+I (HARDWARE\sys.h)(0x5652B1B1)
+I (..\inc/hw_memmap.h)(0x567CBA40)
+I (..\inc/hw_types.h)(0x567CBA46)
+I (..\inc/hw_ints.h)(0x567CBA42)
+I (..\driverlib/gpio.h)(0x567CBA02)
+I (..\driverlib/pin_map.h)(0x567CBA12)
+I (..\driverlib/sysctl.h)(0x567CBA12)
+I (..\driverlib/uart.h)(0x567CBA16)
+I (..\driverlib/interrupt.h)(0x567CBA08)
+I (HARDWARE\lcd.h)(0x5652BF24)
+F (.\HARDWARE\key.c)(0x565437B3)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I..\..\..\×ÛºÏ²âÊÔ -I..\..\..\QFLM4F232 -IE:\QF-LM4F232 -I..\..\QFLM4F232 -I..\inc -I.\HARDWARE -I..\driverlib -I..\grlib -I..\utils -I..\-I F:\test\calculate\RTE-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-I F:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DLM4F232 -Drvmdk -DPART_LM4F232H5QD -DTARGET_IS_BLIZZARD_RA1-o .\rvmdk\key.o --omf_browse .\rvmdk\key.crf --depend .\rvmdk\key.d)
+I (HARDWARE\key.h)(0x564D7A8D)
+I (HARDWARE\sys.h)(0x5652B1B1)
+I (HARDWARE\PCF8574.h)(0x56551F71)
+I (..\inc/hw_memmap.h)(0x567CBA40)
+I (..\inc/hw_types.h)(0x567CBA46)
+I (..\driverlib/gpio.h)(0x567CBA02)
+I (..\driverlib/pin_map.h)(0x567CBA12)
+I (..\driverlib/sysctl.h)(0x567CBA12)
+I (..\driverlib/rom.h)(0x567CBA10)
+I (F:\MDK5\ARM\ARMCC\include\math.h)(0x5475F2FE)
+I (HARDWARE\lcd.h)(0x5652BF24)
+F (..\utils\uartstdio.c)(0x5653E698)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I..\..\..\×ÛºÏ²âÊÔ -I..\..\..\QFLM4F232 -IE:\QF-LM4F232 -I..\..\QFLM4F232 -I..\inc -I.\HARDWARE -I..\driverlib -I..\grlib -I..\utils -I..\-I F:\test\calculate\RTE-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-I F:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DLM4F232 -Drvmdk -DPART_LM4F232H5QD -DTARGET_IS_BLIZZARD_RA1-o .\rvmdk\uartstdio.o --omf_browse .\rvmdk\uartstdio.crf --depend .\rvmdk\uartstdio.d)
+I (F:\MDK5\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
+I (..\inc/hw_ints.h)(0x567CBA42)
+I (..\inc/hw_memmap.h)(0x567CBA40)
+I (..\inc/hw_types.h)(0x567CBA46)
+I (..\inc/hw_uart.h)(0x567CBA46)
+I (..\driverlib/debug.h)(0x567CB9F2)
+I (..\driverlib/interrupt.h)(0x567CBA08)
+I (..\driverlib/rom.h)(0x567CBA10)
+I (..\driverlib/rom_map.h)(0x567CBA10)
+I (..\driverlib/sysctl.h)(0x567CBA12)
+I (..\driverlib/uart.h)(0x567CBA16)
+I (..\utils/uartstdio.h)(0x564D82FB)
+F (.\HARDWARE\PCF8574.c)(0x56540B5D)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I..\..\..\×ÛºÏ²âÊÔ -I..\..\..\QFLM4F232 -IE:\QF-LM4F232 -I..\..\QFLM4F232 -I..\inc -I.\HARDWARE -I..\driverlib -I..\grlib -I..\utils -I..\-I F:\test\calculate\RTE-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-I F:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DLM4F232 -Drvmdk -DPART_LM4F232H5QD -DTARGET_IS_BLIZZARD_RA1-o .\rvmdk\pcf8574.o --omf_browse .\rvmdk\pcf8574.crf --depend .\rvmdk\pcf8574.d)
+I (HARDWARE\PCF8574.h)(0x56551F71)
+I (..\inc/hw_memmap.h)(0x567CBA40)
+I (..\inc/hw_types.h)(0x567CBA46)
+I (..\driverlib/gpio.h)(0x567CBA02)
+I (..\driverlib/pin_map.h)(0x567CBA12)
+I (..\driverlib/sysctl.h)(0x567CBA12)
+I (..\driverlib/rom.h)(0x567CBA10)
+I (HARDWARE\sys.h)(0x5652B1B1)
+I (F:\MDK5\ARM\ARMCC\include\math.h)(0x5475F2FE)
+F (.\HARDWARE\tm1638.c)(0x60CC3D71)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I..\..\..\×ÛºÏ²âÊÔ -I..\..\..\QFLM4F232 -IE:\QF-LM4F232 -I..\..\QFLM4F232 -I..\inc -I.\HARDWARE -I..\driverlib -I..\grlib -I..\utils -I..\-I F:\test\calculate\RTE-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-I F:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DLM4F232 -Drvmdk -DPART_LM4F232H5QD -DTARGET_IS_BLIZZARD_RA1-o .\rvmdk\tm1638.o --omf_browse .\rvmdk\tm1638.crf --depend .\rvmdk\tm1638.d)
+I (HARDWARE\tm1638.h)(0x56541C42)
+I (..\inc/hw_gpio.h)(0x567CBA3E)
+I (..\inc/hw_memmap.h)(0x567CBA40)
+I (..\inc/hw_types.h)(0x567CBA46)
+I (..\driverlib/gpio.h)(0x567CBA02)
+I (..\driverlib/pin_map.h)(0x567CBA12)
+I (..\driverlib/sysctl.h)(0x567CBA12)
+I (..\driverlib/rom.h)(0x567CBA10)
+I (..\grlib/grlib.h)(0x567CBA2A)
+I (HARDWARE\sys.h)(0x5652B1B1)
+I (HARDWARE\lcd.h)(0x5652BF24)
+I (HARDWARE\uart.h)(0x5653FAF0)
+I (..\utils/uartstdio.h)(0x564D82FB)
+I (F:\MDK5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
+I (F:\MDK5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (F:\MDK5\ARM\ARMCC\include\math.h)(0x5475F2FE)
+F (.\main.c)(0x565E5E8E)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I..\..\..\×ÛºÏ²âÊÔ -I..\..\..\QFLM4F232 -IE:\QF-LM4F232 -I..\..\QFLM4F232 -I..\inc -I.\HARDWARE -I..\driverlib -I..\grlib -I..\utils -I..\-I F:\test\calculate\RTE-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include-I F:\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DLM4F232 -Drvmdk -DPART_LM4F232H5QD -DTARGET_IS_BLIZZARD_RA1-o .\rvmdk\main.o --omf_browse .\rvmdk\main.crf --depend .\rvmdk\main.d)
+I (..\inc/hw_types.h)(0x567CBA46)
+I (..\driverlib/sysctl.h)(0x567CBA12)
+I (..\driverlib/gpio.h)(0x567CBA02)
+I (..\driverlib/pin_map.h)(0x567CBA12)
+I (..\driverlib/rom.h)(0x567CBA10)
+I (..\grlib/grlib.h)(0x567CBA2A)
+I (..\inc/hw_memmap.h)(0x567CBA40)
+I (..\driverlib/fpu.h)(0x567CBA02)
+I (hardware/lcd.h)(0x5652BF24)
+I (..\driverlib/uart.h)(0x567CBA16)
+I (hardware/relay.h)(0x564D9200)
+I (hardware/sys.h)(0x5652B1B1)
+I (hardware/PCF8574.h)(0x56551F71)
+I (F:\MDK5\ARM\ARMCC\include\math.h)(0x5475F2FE)
+I (hardware/bmp085.h)(0x5655242D)
+I (..\inc/hw_gpio.h)(0x567CBA3E)
+I (hardware/DC_motor.h)(0x565432DE)
+I (hardware/dht11.h)(0x5653D083)
+I (hardware/Dot_Matrix.h)(0x56540E7A)
+I (hardware/step_motor.h)(0x564D9A05)
+I (hardware/MMA7455.h)(0x5652C9E5)
+I (hardware/tm1638.h)(0x56541C42)
+I (hardware/uart.h)(0x5653FAF0)
+I (hardware/key.h)(0x564D7A8D)
+F (..\driverlib\rvmdk-cm4f\driverlib-cm4f.lib)(0x567CBB1A)()
+F (..\grlib\rvmdk-cm4f\grlib-cm4f.lib)(0x567CBCE0)()

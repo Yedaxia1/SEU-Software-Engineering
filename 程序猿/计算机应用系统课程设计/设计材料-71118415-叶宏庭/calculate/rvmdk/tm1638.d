@@ -1,0 +1,17 @@
+.\rvmdk\tm1638.o: HARDWARE\tm1638.c
+.\rvmdk\tm1638.o: HARDWARE\tm1638.h
+.\rvmdk\tm1638.o: ..\inc/hw_gpio.h
+.\rvmdk\tm1638.o: ..\inc/hw_memmap.h
+.\rvmdk\tm1638.o: ..\inc/hw_types.h
+.\rvmdk\tm1638.o: ..\driverlib/gpio.h
+.\rvmdk\tm1638.o: ..\driverlib/pin_map.h
+.\rvmdk\tm1638.o: ..\driverlib/sysctl.h
+.\rvmdk\tm1638.o: ..\driverlib/rom.h
+.\rvmdk\tm1638.o: ..\grlib/grlib.h
+.\rvmdk\tm1638.o: HARDWARE\sys.h
+.\rvmdk\tm1638.o: HARDWARE\lcd.h
+.\rvmdk\tm1638.o: HARDWARE\uart.h
+.\rvmdk\tm1638.o: ..\utils/uartstdio.h
+.\rvmdk\tm1638.o: F:\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\rvmdk\tm1638.o: F:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\rvmdk\tm1638.o: F:\MDK5\ARM\ARMCC\Bin\..\include\math.h

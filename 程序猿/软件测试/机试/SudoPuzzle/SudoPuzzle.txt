@@ -1,0 +1,61 @@
+package net.mooctest;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class SudokuPuzzleTest {
+
+	@Test
+	public void test() {
+		SudokuGenerator sudokuGenerator0 = new SudokuGenerator();
+		// 测试数独生成器
+		SudokuPuzzle puzzle=sudokuGenerator0.generateRandomSudoku(SudokuPuzzleType.SIXBYSIX);
+		sudokuGenerator0.generateRandomSudoku(SudokuPuzzleType.NINEBYNINE);
+		sudokuGenerator0.generateRandomSudoku(SudokuPuzzleType.TWELVEBYTWELVE);
+		sudokuGenerator0.generateRandomSudoku(SudokuPuzzleType.SIXTEENBYSIXTEEN);
+		// 测试Move
+		puzzle.makeMove(2,3,"9",true);
+		puzzle.makeMove(2,3,"9",false);
+		// 测试toString
+	    String result=puzzle.toString();
+		// 测试result
+		String []results=puzzle.getValidValues();
+		// 测试get
+		int a=puzzle.getNumRows();
+		Assert.assertEquals(6,a);
+		a=puzzle.getNumColumns();
+		Assert.assertEquals(6,a);
+		a=puzzle.getBoxWidth();
+		Assert.assertEquals(3,a);
+		a=puzzle.getBoxHeight() ;
+		Assert.assertEquals(2,a);
+		// 测试isValid
+		puzzle.isValidMove(1,2,"1");
+		puzzle.isValidMove(1,2,"a");
+		puzzle.isValidMove(7,2,"a");
+		// 测试numin
+		puzzle.numInCol(4,"3");
+		puzzle.numInCol(4,"^");
+		puzzle.numInCol(99,"3");
+		puzzle.numInRow(5,"0");
+		puzzle.numInRow(5,"*");
+		puzzle.numInRow(54,"0");
+		puzzle.numInBox(4,2,"4");
+		puzzle.numInBox(4,2,"%");
+		puzzle.numInBox(43,2,"4");
+		puzzle.numInBox(4,222,"4");
+		// 测试isSlot
+		puzzle.isSlotAvailable(3,4);
+		puzzle.isSlotMutable(4,3);
+		puzzle.getValue(5,5);
+		Assert.assertEquals("", puzzle.getValue(10,10));
+		puzzle.getBoard();
+		Assert.assertEquals(true, puzzle.inRange(2,5));	
+		Assert.assertEquals(false, puzzle.inRange(255,5));
+		puzzle.boardFull();
+		puzzle.makeSlotEmpty(2,2);
+		
+	}
+	
+}

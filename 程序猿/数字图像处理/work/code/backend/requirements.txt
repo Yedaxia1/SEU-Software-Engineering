@@ -1,0 +1,14 @@
+Django==3.0.8
+django-cors-headers==3.4.0
+django-celery==3.3.1
+gunicorn==20.0.4
+uWSGI==2.0.19.1
+mysqlclient==2.0.1
+requests==2.24.0
+opencv-python==3.4.2.17
+opencv-contrib-python==3.4.2.17
+imutils==0.5.3
+pandas==0.23.4
+matplotlib==2.2.3
+Pillow==7.2.0
+

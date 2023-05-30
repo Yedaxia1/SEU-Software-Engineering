@@ -1,0 +1,14 @@
+.\rvmdk\dht11.o: HARDWARE\dht11.c
+.\rvmdk\dht11.o: HARDWARE\dht11.h
+.\rvmdk\dht11.o: ..\..\..\B实验\inc/hw_gpio.h
+.\rvmdk\dht11.o: ..\..\..\B实验\inc/hw_memmap.h
+.\rvmdk\dht11.o: ..\..\..\B实验\inc/hw_types.h
+.\rvmdk\dht11.o: ..\..\..\B实验\driverlib/gpio.h
+.\rvmdk\dht11.o: ..\..\..\B实验\driverlib/pin_map.h
+.\rvmdk\dht11.o: ..\..\..\B实验\driverlib/sysctl.h
+.\rvmdk\dht11.o: ..\..\..\B实验\driverlib/rom.h
+.\rvmdk\dht11.o: ..\..\..\B实验\grlib/grlib.h
+.\rvmdk\dht11.o: HARDWARE\lcd.h
+.\rvmdk\dht11.o: HARDWARE\PCF8574.h
+.\rvmdk\dht11.o: HARDWARE\sys.h
+.\rvmdk\dht11.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

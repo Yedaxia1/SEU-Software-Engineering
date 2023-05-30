@@ -1,0 +1,12 @@
+.\rvmdk\relay.o: HARDWARE\relay.c
+.\rvmdk\relay.o: HARDWARE\relay.h
+.\rvmdk\relay.o: HARDWARE\sys.h
+.\rvmdk\relay.o: HARDWARE\PCF8574.h
+.\rvmdk\relay.o: ..\..\..\B实验\inc/hw_memmap.h
+.\rvmdk\relay.o: ..\..\..\B实验\inc/hw_types.h
+.\rvmdk\relay.o: ..\..\..\B实验\driverlib/gpio.h
+.\rvmdk\relay.o: ..\..\..\B实验\driverlib/pin_map.h
+.\rvmdk\relay.o: ..\..\..\B实验\driverlib/sysctl.h
+.\rvmdk\relay.o: ..\..\..\B实验\driverlib/rom.h
+.\rvmdk\relay.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\rvmdk\relay.o: HARDWARE\lcd.h

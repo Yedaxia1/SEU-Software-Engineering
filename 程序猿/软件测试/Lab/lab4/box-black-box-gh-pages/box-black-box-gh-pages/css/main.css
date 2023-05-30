@@ -1,0 +1,119 @@
+.box-input {
+    padding: 2px 2px 2px;
+    width: 75px;
+}
+
+md-input-container input {
+    width: 96%;
+}
+.test-case {
+    border-bottom-color: #989898;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: white;
+}
+
+.result-thing.my-primary {
+    color: green;
+}
+.result-thing.my-warn {
+    color: red;
+}
+
+.box-conf {
+    padding-right: 30px;
+}
+
+.brief .discription {
+    color: white;
+    font-size: 15px;
+}
+
+.main-toolbar {
+    height: 115px;
+}
+
+.md-display-1 {
+    line-height: 1px;
+    margin-top: 29px;
+    margin-bottom: 19px;
+}
+
+div.brief {
+    width: 300px;
+    margin-right: 20px;
+}
+
+p.brief {
+    margin-top: 2px;
+}
+
+.full-div{
+    width: inherit;
+    height: inherit;
+}
+
+.title em{
+    text-indent: 5px;
+}
+
+.scrollbar-mitigate{ 
+    padding-right: 25px;
+}
+
+md-toolbar.label-bar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    min-height: 30px;
+    height: 33px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    background-color: white;
+    color: black;
+}
+    
+div.label-bar {
+    padding-bottom: 0px;
+    padding-top: 0px; 
+}
+
+.box-conf div:last-child button{
+    /*margin-top: -9px;*/
+}
+
+.text-centered {
+    text-align: center;
+    color: grey;
+}
+.app{
+  height: 106px;
+  background-color: #E0E0E0;
+}
+.invalid .result-thing.my-primary {
+    color: rgba(71, 132, 71, 0.55);
+}
+.invalid .result-thing.my-warn {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.expected-result {
+    text-align: center;
+    padding-right: 16px;
+}
+
+.plus-button-div {
+    opacity: 0.9;
+    height: 100px;
+    margin: 4px;
+}
+
+.plus-button-div button{
+    height: 100%;
+}
+
+.myHandle {
+    cursor: move;
+}

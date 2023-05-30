@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BoxBlackBox">
+<head>
+    <meta charset="utf-8">
+    <title>Rectangles</title>
+    <!--<link href="css/bootstrap.css" rel="stylesheet" type="text/css">-->
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body ng-controller="BoxTestController as vm" ng-module="BoxBlackBox" layout="row" ng-cloak>
+<div layout="column" role="main" flex>
+<md-toolbar layout-padding layout="row" class="main-toolbar md-tall">
+    <div class="title">
+        <h5 class="md-display-1">
+            Rectangles
+        </h5>
+        <p><em>Black Box Test Suite</em></p>
+    </div>
+    <span flex></span>
+    <div layout="column" layout-padding layout-align="center center">
+        <md-button class="md-raised" ng-click="vm.runTests()">
+            <i class="fa fa-play"></i>
+            Run all test cases
+        </md-button>
+       
+    </div>
+    <span flex></span>
+    <div class="brief">
+        <p class="brief">
+            <span class="sub-heading"> Rectangle : </span>
+            <br />
+            <span class="discription"><em>a point with positive integer co-ordinates x, y, with integer width and height greater than zero.</em></span>
+        </p>
+    </div>
+
+    <div class="brief">
+        <p class="brief">
+            <span class="sub-heading"> Function Requirements: </span>
+            <br />
+            <span class="discription"><em>true if and only if there is a non-zero area of overlap.</em></span>
+        </p>
+    </div>
+    <div class="brief">
+        <p class="brief">
+            <span class="sub-heading"> Goal : </span>
+            <br />
+            <span class="discription"><em>
+                There are a number of implementations of a rectangle overlap detection function.  Write some test cases to discover which ones have bugs.
+            </em></span>
+        </p>
+    </div>
+
+</md-toolbar>
+<md-toolbar layout="row" class="label-bar" layout-padding ng-class="{'scrollbar-mitigate' : vm.scrolling}">
+    <span flex layout="row" layout-align="center center">Control</span>
+    <span flex="20" layout="row" layout-align="center center">Rectangle 1</span>
+    <span flex="20" layout="row" layout-align="center center">Rectangle 2</span>
+    <span flex="5" layout="row" layout-align="center center">Expected</span>
+    <span flex="20" layout="row" layout-align="center center">Notes</span>
+    <div class="label-bar" flex="20" layout="row" layout-padding layout-align="center center">
+        <div ng-repeat="alg in vm.algorithms" layout-align="center center" flex>
+        {{alg.name}}
+        </div>
+    </div>
+</md-toolbar>
+<md-content layout="column" id="this-can-scroll" >
+<div ui-sortable="vm.sortableOptions" ng-model="vm.testCases" > 
+    <div ng-repeat="test in vm.testCases" layout="row" layout-padding class="test-case">
+            <div class="myHandle" layout="column" layout-padding layout-align="center start">
+                <i class="fa fa-arrows-v fa-3x"></i>
+            </div>
+            <form name="testForm" ng-submit="vm.runTest(test)" layout="row" layout-fill>
+            <div layout="row" class="box-conf" flex layout-align="center center">
+                    
+                <md-button class="md-fab md-raised  md-mini md-raised md-primary" ng-click="vm.runTest(test)">
+                    <i class="fa fa-play" aria-label="play"></i>
+                    <md-tooltip>Run this test case</md-tooltip>
+                </md-button>
+
+                <md-button type="button" class="md-fab md-raised  md-mini md-raised" ng-click="vm.clone(test)">
+                    <i class="fa fa-clone" aria-label="Clone"></i>
+                    <md-tooltip>Clone this test case</md-tooltip>
+                </md-button>
+                
+                <md-button type="button" class="md-fab md-raised  md-mini md-warn" ng-click="vm.delete(test)" aria-label="delete">
+                    <md-tooltip md-direction="top">Remove this test case</md-tooltip>
+                    <i class="fa fa-trash"></i>
+                </md-button>
+            
+            </div>
+            <div layout="column" flex="20">
+                <div layout-padding  layout="row" layout-align="center center" >
+                    <md-input-container class="box-input">
+                        <label>X Coord</label>
+                        <input ng-change="vm.testChanged(test)" ng-model="test.box1.x" type="number" step="1" min="0" id="xcoord{{test.number}}">
+                    </md-input-container>
+                    <md-input-container class="box-input">
+                        <label>Y Coord</label>
+                        <input ng-change="vm.testChanged(test)" ng-model="test.box1.y" type="number" step="1" min="0">
+                    </md-input-container>
+                    <md-input-container class="box-input">
+                        <label>Width</label>
+                        <input ng-change="vm.testChanged(test)" ng-model="test.box1.width" type="number" step="1" min="1">
+                    </md-input-container>
+                    <md-input-container class="box-input">
+                        <label>Height</label>
+                        <input ng-change="vm.testChanged(test)" ng-model="test.box1.height" type="number" step="1" min="1">
+                    </md-input-container>
+                </div>
+            </div>
+            <div layout="row" layout-align="center center">
+            <md-button type="button" class="md-fab md-accent md-raised  md-mini md-raised" ng-click="vm.swap(test)">
+                    <i class="fa fa-arrows-h" aria-label="Swap"></i>
+                    <md-tooltip>Swap the rectangles</md-tooltip>
+            </md-button>
+            </div>
+            <div layout="column" flex="20">
+                <div layout-padding class="autoScroll" layout="row"  layout-align="center center">
+                    <md-input-container class="box-input">
+                        <label>X Coord</label>
+                        <input ng-change="vm.testChanged(test)" ng-model="test.box2.x" type="number" step="1" min="0">
+                    </md-input-container>
+                    <md-input-container class="box-input">
+                        <label>Y Coord</label>
+                        <input ng-change="vm.testChanged(test)" ng-model="test.box2.y" type="number" step="1" min="0">
+                    </md-input-container>
+                    <md-input-container class="box-input">
+                        <label>Width</label>
+                        <input ng-change="vm.testChanged(test)" ng-model="test.box2.width" type="number" step="1" min="1">
+                    </md-input-container>
+                    <md-input-container class="box-input">
+                        <label>Height</label>
+                        <input ng-change="vm.testChanged(test)" ng-model="test.box2.height" type="number" step="1" min="1">
+                    </md-input-container>
+                </div>
+            </div>
+            <div flex="5" layout-align="center center" layout="column">
+                <md-switch ng-change="vm.testChanged(test)" ng-model="test.expected" aria-label="Switch 2" class="md-accent">
+                    <strong class="">{{ test.expected | uppercase }}</strong>
+                </md-switch>
+                
+            </div>
+            <div layout-padding flex="20">
+                <md-input-container>
+                    <label>optional</label>
+                    <input ng-model="test.notes" type="text">
+                </md-input-container>
+            </div>
+            <!-- <span flex></span> -->
+            <div class="result" layout="column" flex="20" ng-class="{'invalid' : test.resultsInvalid}">
+                <div class="errors" layout-align="center center">
+                    <p>{{test.errors}}</p>
+                </div>
+                <span ng-if="test.resultsInvalid" class="text-centered">
+                    <em>Press play to run the test</em>
+                </span>
+                <div class="test-results" layout="row" layout-align="center center">
+                    
+                    <span ng-repeat="result in test.results track by $index" layout="row" flex>
+                        <div ng-if="result.result" flex class="result-thing my-primary">
+                             <icon class="fa fa-check-square fa-2x"></icon>
+                         </div>
+                        <div ng-if="!result.result" flex class="result-thing  my-warn">
+                            <icon class="fa fa-minus-square fa-2x"></icon>
+                        </div>
+                        <md-tooltip>
+                        {{result.algorithm}}
+                    </md-tooltip>
+                    </span>
+                </div>
+            </div>
+            </form>
+    </div>
+</div>
+
+<div class="plus-button-div" layout="column" layout-padding>
+    <md-button class="md-accent md-raised" ng-click="vm.plusTest()">
+            Add test case
+        </md-button>
+</div>
+
+<!--External Modules-->
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/jquery-ui.min.js"></script>
+
+<!-- Angular Material Dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+
+<!--  Vendor -->
+<script src="js/vendor/sortable.js"></script>
+
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/BoxTestController.js"></script>
+
+<!-- Services -->
+<script src="js/services/algorithms.js"></script>
+
+<!-- Directives -->
+<script src="js/directives/focusMe.js"></script>
+
+</md-content>
+</div>
+</body>
+</html>

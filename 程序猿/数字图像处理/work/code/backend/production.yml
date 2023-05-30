@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  qiaoqian-backend:
+    build:
+      context: .
+      dockerfile: ./production/Dockerfile
+    image: qiaoqian-backend
+    container_name: qiaoqian-backend
+    working_dir: /qiaoqianbackend
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/qiaoqianbackend
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    command: /start.sh

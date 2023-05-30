@@ -1,0 +1,6 @@
+-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 -Otime --apcs=interwork --split_sections -I..\..\..\×ÛºÏ²âÊÔ -I..\..\..\QFLM4F232 -IE:\QF-LM4F232 -I..\..\QFLM4F232 -I..\inc -I.\HARDWARE -I..\driverlib -I..\grlib -I..\utils -I..\
+-I F:\test\calculate\RTE
+-I F:\MDK5\ARM\PACK\Keil\LM4F_DFP\1.0.0\Device\Include
+-I F:\MDK5\ARM\CMSIS\Include
+-D__UVISION_VERSION="514" -DLM4F232 -Drvmdk -DPART_LM4F232H5QD -DTARGET_IS_BLIZZARD_RA1
+-o .\rvmdk\uart.o --omf_browse .\rvmdk\uart.crf --depend .\rvmdk\uart.d "HARDWARE\uart.c"

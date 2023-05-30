@@ -1,0 +1,221 @@
+/**
+ * 
+ */
+package net.mooctest;
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class NextdayTest {
+	/*
+	  - test函数测试合法输入的预期输出是否正确
+	  - 除test以外的函数测试不合法日期的定义 expected = IllegalArgumentException.class
+	*/
+	@Test
+	public void test() {
+		Nextday n = new Nextday();
+
+		// 测试一般情况
+		Date d1 = new Date(1,2,2000);
+		Date d2 = new Date(1,3,2000);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+		
+		// 测试小月30日
+		d1 = new Date(4,30,2000);
+		d2 = new Date(5,1,2000);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试大月31日
+		d1 = new Date(1,31,2000);
+		d2 = new Date(2,1,2000);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试闰年2.28，2.29
+		d1 = new Date(2,28,2000);
+		d2 = new Date(2,29,2000);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试闰年2.29，3.1
+		d1 = new Date(2,29,2000);
+		d2 = new Date(3,1,2000);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试12.31，1.1
+		d1 = new Date(12,31,2000);
+		d2 = new Date(1,1,2001);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试平年2.28，3.1
+		d1 = new Date(2,28,2001);
+		d2 = new Date(3,1,2001);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试toString()
+		Date date = new Date(2,28,1999);
+        Date d = Nextday.nextDay(date);
+        String result = d.toString();
+        assertEquals("3/1/1999",result);
+
+		// 测试闰年判定条件
+		d1 = new Date(2,28,2100);
+		d2 = new Date(3,1,2100);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		d1 = new Date(12,31,-2100);
+		d2 = new Date(1,1,-2099);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试闰年判定条件
+		d1 = new Date(2,28,-2001);
+		d2 = new Date(2,29,-2001);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试闰年判定条件
+		d1 = new Date(2,29,-2001);
+		d2 = new Date(3,1,-2001);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试闰年判定条件
+		d1 = new Date(2,28,-2013);
+		d2 = new Date(2,29,-2013);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试闰年判定条件
+		d1 = new Date(2,29,-2013);
+		d2 = new Date(3,1,-2013);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试闰年判定条件
+		d1 = new Date(2,28,-2014);
+		d2 = new Date(3,1,-2014);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试闰年判定条件
+		d1 = new Date(2,28,-2101);
+		d2 = new Date(3,1,-2101);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		// 测试-1年--1年
+		d1 = new Date(12,31,-1);
+		d2 = new Date(1,1,1);
+		assertEquals(true, d2.equals(Nextday.nextDay(d1)));
+
+		d1.printDate();
+		d1.toString();
+
+		assertEquals(false, d2.equals(d1));
+
+		d1 = new Date(12,1,1);
+		d2 = new Date(1,1,1);
+		assertEquals(false, d2.equals(d1));
+
+		d1 = new Date(1,2,1);
+		d2 = new Date(1,1,1);
+		assertEquals(false, d2.equals(d1));
+
+
+	}
+	// 测试非法day
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalDay() {
+		Date d1 = new Date(1,0,2000);
+	}
+	// 测试非法day
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalDay2() {
+		Date d1 = new Date(1,32,2000);
+	}
+	// 测试非法day
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalDay3() {
+		Date d1 = new Date(2,29,2100);
+	}
+	// 测试非法day
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalDay4() {
+		Date d1 = new Date(2,29,-2002);
+	}
+	// 测试非法day
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalDay5() {
+		Date d1 = new Date(2,29,-2101);
+	}
+	// 测试非法day
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalDay6() {
+		Date d1 = new Date(4,31,-2101);
+	}
+	// 测试非法month
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalMonth() {
+		Date d1 = new Date(0,22,2000);
+	}
+	// 测试非法month
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalMonth2() {
+		Date d1 = new Date(13,22,2000);
+	}
+	// 测试非法year
+	@Test (expected = IllegalArgumentException.class)
+	public void testIllegalyear() {
+		Date d1 = new Date(2,22,0);
+	}
+
+	// 测试Day类
+	@Test
+    public void testDayEquals(){
+        Month month1 = new Month(2,new Year(4));
+		Day day1 = new Day(2,new Month(2,new Year(2)));
+		assertTrue(day1.equals(new Day(2,new Month(2,new Year(2)))));
+		assertFalse(day1.equals(new Integer(2020)));
+		assertFalse(day1.equals(new String("2")));
+		assertFalse(day1.equals(new Day(2,new Month(3,new Year(2)))));
+		assertFalse(day1.equals(new Day(3,new Month(3,new Year(2)))));
+		day1.increment();
+		day1.isValid();
+		day1=new Day(2,month1);
+		day1.isValid();
+		day1.setDay(3, new Month(2,new Year(2)));
+
+		
+		Day day2 = new Day(2,new Month(2,new Year(2)));
+		day2.increment();
+		day2.setDay(28,new Month(2,new Year(2)));
+		day2.increment();
+	}
+	
+	// 测试Month类
+	@Test
+    public void testMonthEquals(){
+        
+		Month month1 = new Month(2,new Year(2));
+		assertTrue(month1.equals(new Month(2,new Year(2))));
+		assertFalse(month1.equals(new Integer(2020)));
+		assertFalse(month1.equals(new Month(2,new Year(3))));
+		assertFalse(month1.equals(new Month(3,new Year(3))));
+		month1.increment();
+		month1.getMonth();
+		month1.getMonthSize();
+		month1.isValid();
+		month1 = new Month(2,new Year(4));
+		month1.getMonthSize();
+	
+	
+		Month month2 = new Month(2,new Year(2));
+		month2.increment();
+		month2.increment();
+		month2.setMonth(3,new Year(2));
+	}
+
+	// 测试year类
+	@Test
+    public void testYearEquals(){
+        
+		Year year1 = new Year(200);
+		assertTrue(year1.equals(new Year(200)));
+		assertFalse(year1.equals(new Year(2)));
+		assertFalse(year1.equals(new Integer(2020)));
+		year1.increment();
+		year1.isLeap();
+	}
+
+}

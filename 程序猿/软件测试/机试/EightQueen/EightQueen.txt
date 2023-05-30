@@ -1,0 +1,143 @@
+package net.mooctest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class EightQueensTest {
+
+	// 测试generateBoard()
+	@Test(timeout = 4000)
+	public void test() {
+		EightQueens board = new EightQueens();
+		Queen[] startBoard = board.generateBoard();
+		
+
+	}
+
+	// 测试SimulatedAnnealing类
+	@Test
+	public void testSimulatedAnnealing(){
+		SimulatedAnnealing s = new SimulatedAnnealing(new EightQueens().generateBoard());
+		s.startState();
+		s.getNodesGenerated();
+		s.getStartNode();
+		s.simulatedAnneal(8.0, 1.0);
+	}
+	
+	// 测试RandomRestart类
+	@Test
+	public void testRandomRestart(){
+		RandomRestart r = new RandomRestart(new EightQueens().generateBoard());
+		r.randomRestart();
+		Node n = new Node();
+		n.setState(new EightQueens().generateBoard());
+		r.setStartNode(n);
+		r.getStartNode();
+		r.getNodesGenerated();
+	}
+
+	// 测试HillClimbing类
+	@Test
+	public void testHillClimbing(){
+		HillClimbing h1 = new HillClimbing();
+		Queen [] qs = new Queen[8];
+		for(int i=0;i<8;i++)
+			qs[i] = new Queen(i, i);
+		HillClimbing h2 = new HillClimbing(qs);
+		HillClimbing h3 = new HillClimbing(new EightQueens().generateBoard());
+
+		h1.getStartNode();
+		h2.getStartNode();
+		h3.getStartNode();
+
+		h1.hillClimbing();
+		h2.hillClimbing();
+		h3.hillClimbing();
+
+		h1.getNodesGenerated();
+		h2.getNodesGenerated();
+		h3.getNodesGenerated();
+	}
+
+	// 测试Node
+	@Test (expected = NullPointerException.class)
+	public void testNode(){
+		// 生成Queen
+		Queen [] qs = new Queen[8];
+		for(int i=0;i<8;i++)
+			qs[i] = new Queen(i, i);
+
+		// 生成Node
+		Node n = new Node();
+		n.setState(qs);
+		Queen [] qq = n.getState();
+		for(int i =0; i<8;i++){
+			assertEquals(qs[i].getRow(), qq[i].getRow());
+			assertEquals(qs[i].getColumn(), qq[i].getColumn());
+		}
+
+		n.toString();
+
+		n.computeHeuristic();
+		n.getHeuristic();
+
+		Node n2 = new Node(n);
+		for(int i=0;i<4;i++)
+			qs[i] = new Queen(i+2, i+1);
+		n2.setState(qs);
+		qq = n2.getState();
+		for(int i =0; i<8;i++){
+			assertEquals(qs[i].getRow(), qq[i].getRow());
+			assertEquals(qs[i].getColumn(), qq[i].getColumn());
+		}
+
+		assertEquals(1, n.compareTo(n2));
+		assertEquals(-1, n2.compareTo(n));
+		assertEquals(0, n.compareTo(n));
+
+		n.generateNeighbours(n2);
+		n.getRandomNeighbour(n2);
+		n.generateNeighbours(null);
+	}
+	
+	// 测试QueencanAttack
+	@Test
+	public void testQueencanAttack(){
+		Queen q1 = new Queen(1, 1);
+		Queen q2 = new Queen(1, 5);
+
+		assertEquals(1, q1.getRow());
+		assertEquals(1, q1.getColumn());
+
+		assertEquals(true, q1.canAttack(q2));
+
+		q1.setRow(2);
+		assertEquals(false, q1.canAttack(q2));
+
+		q1.setColumn(5);
+		assertEquals(true, q1.canAttack(q2));
+
+		q1 = new Queen(1, 1);
+		q2 = new Queen(2, 2);
+		assertEquals(true, q1.canAttack(q2));
+
+	}
+
+	// 测试QueenmoveDown
+	@Test
+	public void testQueenmoveDown(){
+		Queen q1 = new Queen(1, 1);
+		q1.moveDown(7);
+		q1.moveDown(13);
+		q1.moveDown(1);
+	}
+
+	// 测试QueentoString
+	@Test
+	public void testQueentoString(){
+		Queen q1 = new Queen(1, 1);
+		q1.toString();
+	}
+
+}

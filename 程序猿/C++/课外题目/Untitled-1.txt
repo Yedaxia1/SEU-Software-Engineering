@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+<title>东南大学</title>
+<meta name="keywords" content="东南大学，东大" >
+<meta name="description" content="东南大学（Southeast University），简称东大，坐落于南京市，是中央直管、教育部直属的副部级全国重点大学，中国著名的建筑老八校及原四大工学院之一，国家“211工程”、“985工程”首批重点建设的大学，是“卓越工程师教育培养计划”、“卓越医生教育培养计划”、“2011计划”、“111计划”入选高校，“卓越大学联盟”、“中俄工科大学联盟”、“中欧工程教育平台”主要成员。" >
+
+<link type="text/css" href="/_css/_system/system.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/1/style/89/89.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/00/02/2/style/93/93.css" rel="stylesheet"/>
+<link type="text/css" href="/_js/_portletPlugs/simpleNews/css/simplenews.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/datepicker/css/datepicker.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/sudyNavi/css/sudyNav.css" rel="stylesheet" />
+
+<script language="javascript" src="/_js/jquery.min.js" sudy-wp-context="" sudy-wp-siteId="2"></script>
+<script language="javascript" src="/_js/jquery.sudy.wp.visitcount.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/datepicker/js/jquery.datepicker.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/datepicker/js/datepicker_lang_HK.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/sudyNavi/jquery.sudyNav.js"></script>
+<script type="text/javascript" src="/_upload/tpl/04/82/1154/template1154/extends/extends.js"></script>
+<link href="/_upload/tpl/04/82/1154/template1154/style.css" rel="stylesheet">
+<link href="/_upload/tpl/04/82/1154/template1154/mobile.css" rel="stylesheet">
+<link href="/_upload/tpl/04/82/1154/template1154/media.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="/_upload/tpl/04/82/1154/template1154/extends/libs/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 7]>
+<script src="/_upload/tpl/04/82/1154/template1154/extends/libs/pngfix.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('.site-logo,.search-submit')
+</script>
+<![endif]-->
+</head>
+<body class="main">
+<!--头部开始-->
+<div class="wrapper head" id="header">
+	<div class="inner">
+		<div class="head-right" frag="面板02">
+			<div class="site-lang" frag="窗口02">
+				<div id="wp_nav_w02"> 
+
+					
+					<ul class="clearfix" data-nav-aside='{"title":"领导信箱","index":1}'>
+						
+						<li class="links i1"><em>|</em><a href="/17373/list.htm" target="_self">教职工</a></li>
+						
+						<li class="links i2"><em>|</em><a href="/17374/list.htm" target="_self">在校生</a></li>
+						
+						<li class="links i3"><em>|</em><a href="/17375/list.htm" target="_self">访客</a></li>
+						
+						<li class="links i4"><em>|</em><a href="/17376/list.htm" target="_self">公共服务</a></li>
+						
+						<li class="links i5"><em>|</em><a href="http://www.seu.edu.cn/english/main.htm" target="_blank">English</a></li>
+						
+					</ul>
+					
+				 
+ </div>
+			</div>
+			<div class="searchbox" frag="窗口03" portletmode="search">
+				<!--自定义搜索：开始复制-->
+                    <div class="search-box">
+                        <form method="post" action="/_web/search/doSearch.do?_p=YXM9MiZ0PTExNTQmZD0zNjMyJnA9MSZtPVNOJg__" target="_blank" id="searchform">
+                            <div class="input-item">
+                                <input type="text" name="keyword" id="keyword" value="在此输入">
+                            </div>
+                            <a href="javascript:;" class="input-submit" id="search-submit"><span>搜索</span></a>
+                        </form>
+                    </div>
+                    <!--自定义搜索//复制结束-->
+			</div>
+		</div>
+		<div class="head-left" frag="面板01">
+			<!--logo开始-->
+			<div class="sitelogo" frag="窗口01" portletmode="simpleSiteAttri">
+				<a href="/main.htm" title="返回东南大学首页"><img src="/_upload/tpl/04/82/1154/template1154/images/logo.png"/></a> 
+			</div>
+			<!--//logo结束-->		
+		</div>
+	</div>
+</div>
+<!--//头部结束-->
+<!--导航开始-->
+<nav class="wrapper nav wp-navi" id="nav">
+	<div class="inner clearfix">
+		<div class="wp-panel main-nav-panel panel-5" frag="面板1">
+			<div class="wp-window main-nav-window window-5" frag="窗口1">
+				<div id="wp_nav_w1"> 
+
+					<div class="navi-slide-head clearfix">
+						<h3 class="navi-slide-title"> 导航 </h3>
+						<a class="navi-slide-arrow"></a> </div>
+					
+					<ul class="wp-menu clearfix" data-nav-aside='{"title":"导航","index":0}'>
+						
+						<li class="menu-item i1"> <a class="menu-link" href="http://www.seu.edu.cn" target="_self">首 页</a>
+							
+						</li>
+						
+						<li class="menu-item i2"> <a class="menu-link" href="http://news.seu.edu.cn/" target="_blank">东大新闻</a>
+							
+						</li>
+						
+						<li class="menu-item i3"> <a class="menu-link" href="/17398/list.htm" target="_self">学校概况</a>
+							
+							<em class="menu-switch-arrow"></em>
+							<ul class="sub-menu clearfix">
+								
+								<li class="sub-item i3-1"><a class="sub-link" href="/17410/list.htm" target="_self">学校简介</a>
+									
+								</li>
+								
+								<li class="sub-item i3-2"><a class="sub-link" href="/17411/list.htm" target="_self">历史沿革</a>
+									
+								</li>
+								
+								<li class="sub-item i3-3"><a class="sub-link" href="/17412/list.htm" target="_self">历任领导</a>
+									
+								</li>
+								
+								<li class="sub-item i3-4"><a class="sub-link" href="/17413/list.htm" target="_self">现任领导</a>
+									
+								</li>
+								
+								<li class="sub-item i3-5"><a class="sub-link" href="/17414/list.htm" target="_self">组织机构</a>
+									
+								</li>
+								
+							</ul>
+							
+						</li>
+						
+						<li class="menu-item i4"> <a class="menu-link" href="/17399/list.htm" target="_self">院系设置</a>
+							
+						</li>
+						
+						<li class="menu-item i5"> <a class="menu-link" href="http://www.seu.edu.cn/zmzjxz/list.htm" target="_self">师资力量</a>
+							
+							<em class="menu-switch-arrow"></em>
+							<ul class="sub-menu clearfix">
+								
+								<li class="sub-item i5-1"><a class="sub-link" href="http://rsc.seu.edu.cn/3623/list.htm" target="_blank">两院院士风采</a>
+									
+								</li>
+								
+								<li class="sub-item i5-2"><a class="sub-link" href="http://rsc.seu.edu.cn/3625/list.htm" target="_blank">长江学者</a>
+									
+								</li>
+								
+								<li class="sub-item i5-3"><a class="sub-link" href="http://rsc.seu.edu.cn/zjxzqnxz/list.htm" target="_self">长江学者青年学者</a>
+									
+								</li>
+								
+								<li class="sub-item i5-4"><a class="sub-link" href="http://seugs.seu.edu.cn/3649/list.htm" target="_blank">博士生导师</a>
+									
+								</li>
+								
+								<li class="sub-item i5-5"><a class="sub-link" href="/zmzjxz/list.htm" target="_self">知名专家学者</a>
+									
+								</li>
+								
+								<li class="sub-item i5-6"><a class="sub-link" href="http://cfd.seu.edu.cn/" target="_self">教师教学发展中心</a>
+									
+								</li>
+								
+							</ul>
+							
+						</li>
+						
+						<li class="menu-item i6"> <a class="menu-link" href="/17401/list.htm" target="_self">教育教学</a>
+							
+						</li>
+						
+						<li class="menu-item i7"> <a class="menu-link" href="/17402/list.htm" target="_self">科学研究</a>
+							
+							<em class="menu-switch-arrow"></em>
+							<ul class="sub-menu clearfix">
+								
+								<li class="sub-item i7-1"><a class="sub-link" href="/17416/list.htm" target="_self">科研机构</a>
+									
+								</li>
+								
+								<li class="sub-item i7-2"><a class="sub-link" href="http://sp.seu.edu.cn/" target="_blank">科技园</a>
+									
+								</li>
+								
+								<li class="sub-item i7-3"><a class="sub-link" href="/17418/list.htm" target="_self">资产公司</a>
+									
+								</li>
+								
+							</ul>
+							
+						</li>
+						
+						<li class="menu-item i8"> <a class="menu-link" href="/17403/list.htm" target="_self">招生就业</a>
+							
+							<em class="menu-switch-arrow"></em>
+							<ul class="sub-menu clearfix">
+								
+								<li class="sub-item i8-1"><a class="sub-link" href="http://zsb.seu.edu.cn/" target="_blank">本科生</a>
+									
+								</li>
+								
+								<li class="sub-item i8-2"><a class="sub-link" href="http://yzb.seu.edu.cn/" target="_blank">研究生</a>
+									
+								</li>
+								
+								<li class="sub-item i8-3"><a class="sub-link" href="http://seu.91job.gov.cn/" target="_blank">就业办</a>
+									
+								</li>
+								
+								<li class="sub-item i8-4"><a class="sub-link" href="http://cis.seu.edu.cn/" target="_blank">海外学院</a>
+									
+								</li>
+								
+							</ul>
+							
+						</li>
+						
+						<li class="menu-item i9"> <a class="menu-link" href="#" target="_self">图书档案</a>
+							
+							<em class="menu-switch-arrow"></em>
+							<ul class="sub-menu clearfix">
+								
+								<li class="sub-item i9-1"><a class="sub-link" href="http://www.lib.seu.edu.cn/" target="_blank">图书馆</a>
+									
+								</li>
+								
+								<li class="sub-item i9-2"><a class="sub-link" href="http://archives.seu.edu.cn/" target="_blank">档案馆</a>
+									
+								</li>
+								
+							</ul>
+							
+						</li>
+						
+					</ul>
+					
+				 
+ </div>
+			</div>
+		</div>
+	</div>
+</nav>
+<!--aside导航-->
+<div class="wp-navi-aside" id="wp-navi-aside">
+	<div class="aside-inner">
+		<div class="navi-aside-wrap"></div>
+	</div>
+	<div class="navi-aside-mask"></div>
+</div>
+<!--大图开始-->
+<div class="wrapper mbanner" id="banner">
+	<div class="inner clearfix">
+		<div class="cont-1" frag="面板2">
+			<div frag="窗口2">
+				<div class="focus"></div>
+				<div id="wp_news_w2"> 
+
+					<script type="text/javascript">
+					var w2imgJsons = [
+					
+					{
+					title:"东南大学张川副教授课题组在合成生物学实现信道译码研究中取得新进展",
+					src:"/_upload/article/images/84/74/e8de6b4240788b3eb7bcbfa431f0/6c83548d-25ff-4508-b0e7-0f768d52fbc1.jpg",
+					url:"/_redirect?siteId=2&columnId=17386&articleId=254939"
+					},
+					
+					{
+					title:"“2018东南大学新生文化季”闭幕式暨新生文艺汇演举行",
+					src:"/_upload/article/images/58/17/328e00c741e5ab05ca4494e2b384/99c5889c-7d93-4c33-a06e-7583753c167d.jpg",
+					url:"/_redirect?siteId=2&columnId=17386&articleId=254587"
+					},
+					
+					{
+					title:"中英大学工程教育与研究联盟校长论坛在东南大学举行",
+					src:"/_upload/article/images/0a/f8/e8e3ba1e4042bf6db8f2e5ac95c6/d57a3224-e51d-4ddd-97d1-11152a7be884.jpg",
+					url:"/_redirect?siteId=2&columnId=17386&articleId=243695"
+					},
+					
+					{
+					title:" 东南大学陈震教授在Joule上发表研究论文",
+					src:"/_upload/article/images/cb/67/c3656d7c406fb29a016b436fe7df/d13e712a-d689-4ee3-a359-22a5158993a7.jpg",
+					url:"/_redirect?siteId=2&columnId=17386&articleId=242616"
+					},
+					
+					{
+					title:" ",
+					src:"/_upload/article/images/01/39/ce26318341679a63635e3838cc62/a88ef027-4288-46c2-87cd-404ad68870e0.jpg",
+					url:"/_redirect?siteId=2&columnId=17386&articleId=242062"
+					},
+					
+					{}
+					];
+					w2imgJsons.pop();
+					</script>
+				</div> 
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--//大图结束-->
+<!--主体开始-->
+<div class="wrapper main1" id="container-1">
+	<div class="inner clearfix">
+		<div class="mod clearfix">
+			<div class="ml" >
+				<div class="post post1 post-10" >
+					<div class="tt">
+						<h3 class="tit"><span class="title">东大新闻</span> </h3>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="modl" frag="面板11">
+					<div class="post post-11" frag="窗口11">
+						<div class="con tu_text">
+							<div id="wp_news_w11"> 
+								<ul class="news_list clearfix">
+									
+									<li class="news n1">
+										<a class="news_box" href="/2018/1214/c17406a254977/page.htm" target="_blank">
+											<div class="news_imgs">
+												<image src='/_upload/article/images/00/98/dd3b321b436ca86bb65459759c99/f3ec539d-250c-4313-b73f-4e5f70bd06e7.jpg' width='300' height='200'>
+											</div>
+											<div class="news_wz">
+												<p class="news_title">“国际儿童医学影像研究实验室”揭牌成立</p>
+												<p class="news_time">2018-12-14</p>
+												<p class="news_text">日前，由东南大学、英国伯明翰大学和南京医科大学附属儿童医院联合成立的“国际儿童医学影像研究实验室”正式揭牌。东南大学副校长吴刚、英...</p>
+											</div>
+										</a>
+									</li>
+									
+									<li class="news n2">
+										<a class="news_box" href="/2018/1214/c17406a254973/page.htm" target="_blank">
+											<div class="news_imgs">
+												<image src='/_upload/article/images/ef/79/3a1cc97d4e789d8b0d5f6f9c0ffc/02208fb5-857d-4d4e-adee-df1143fe7269.jpg' width='300' height='200'>
+											</div>
+											<div class="news_wz">
+												<p class="news_title">东南大学召开教学院长工作例会</p>
+												<p class="news_time">2018-12-14</p>
+												<p class="news_text">12月12日下午，东南大学在九龙湖校区召开教学院长工作例会，金保昇副校长，教务处、各院（系）教学院长和相关负责人等参加了会议。会上，教...</p>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+					</div>
+				</div>
+				
+				<div class="modc" frag="面板12">
+					<div class="post post-12" frag="窗口12">
+						<div class="con tu_text">
+							<div id="wp_news_w12"> 
+								<ul class="news_list clearfix">
+									
+									<li class="news n1" data-img="/_upload/article/images/00/98/dd3b321b436ca86bb65459759c99/f3ec539d-250c-4313-b73f-4e5f70bd06e7.jpg">
+										<a class="news_box" href="/2018/1214/c17406a254977/page.htm"target="_blank">
+											<div class="news_wz">
+												<p class="news_title">“国际儿童医学影像研究实验室”揭牌成立</p>
+												<p class="news_time">2018-12-14</p>
+												<p class="news_text">日前，由东南大学、英国伯明翰大学和南京医科大学附属儿童医院联合成立的“国际儿童医学影像研究实验室”正式揭牌。东南大学...</p>
+											</div>
+										</a>
+									</li>
+									
+									<li class="news n2" data-img="/_upload/article/images/ef/79/3a1cc97d4e789d8b0d5f6f9c0ffc/02208fb5-857d-4d4e-adee-df1143fe7269.jpg">
+										<a class="news_box" href="/2018/1214/c17406a254973/page.htm"target="_blank">
+											<div class="news_wz">
+												<p class="news_title">东南大学召开教学院长工作例会</p>
+												<p class="news_time">2018-12-14</p>
+												<p class="news_text">12月12日下午，东南大学在九龙湖校区召开教学院长工作例会，金保昇副校长，教务处、各院（系）教学院长和相关负责人等参加了...</p>
+											</div>
+										</a>
+									</li>
+									
+									<li class="news n3" data-img="/_upload/article/images/45/ca/4ea095f74d51a3afb77f6f5c27d1/4daf3c87-4bc1-453b-8d5e-ff4b925b4a69.jpg">
+										<a class="news_box" href="/2018/1214/c17406a254877/page.htm"target="_blank">
+											<div class="news_wz">
+												<p class="news_title">2018东南大学“光华奖学金”颁奖仪式举行</p>
+												<p class="news_time">2018-12-14</p>
+												<p class="news_text">12月11日上午,东南大学“光华奖学金”颁奖仪式在九龙湖校区举行，光华教育基金会、唐奖教育基金执行长陈振川，东南大学副校...</p>
+											</div>
+										</a>
+									</li>
+									
+									<li class="news n4" data-img="">
+										<a class="news_box" href="/2018/1214/c17406a254868/page.htm"target="_blank">
+											<div class="news_wz">
+												<p class="news_title">东南大学国家大学科技园29家企业获高新技术企业认定</p>
+												<p class="news_time">2018-12-14</p>
+												<p class="news_text">日前，江苏省2018年第四批认定的高新技术企业名单公布，东南大学国家大学科技园共有29家企业入选，分别是南京“一园六区”培...</p>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+						 <div class="more_btn" frag="按钮" type="更多" link="http://news.seu.edu.cn/5486/list.htm">                                      <a href="http://news.seu.edu.cn/5486/list.htm" class="w12_more"><span class="more_text" frag="按钮内容">更多</span></a></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="modl2" frag="面板41">
+					<div class="post post1 post-41" frag="窗口41">
+						<div class="tt">
+							<h3 class="tit"><span class="title" frag="标题">媒体东大</span> </h3>
+						</div>					
+						<div class="con tu_text">
+							<div id="wp_news_w41"> 
+								
+								<ul class="news_list clearfix">
+									
+									<li class="news n1">
+										<a class="news_box" href="/2018/1212/c17407a254666/page.htm"target="_blank" >
+											<div class="news_imgs">
+												<image src='/_upload/article/images/d4/39/d1311d464603b4a8beeb8366d574/a4d8e416-382d-46db-b86e-8018e25b1577.jpg' width='300' height='200'>
+											</div>
+											<div class="news_wz">
+												<p class="news_title">【中新网】国家公祭日前夜 南京大学生点亮烛光悼念遇难同胞</p>
+												<p class="news_time">2018-12-12</p>
+												<p class="news_text">12月12日晚，在国家公祭日前夜，南京东南大学师生举行“1937！1937！”烛光祭活动，现场点燃蜡烛，摆放成和平鸽造型和“NJ1213”...</p>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+					</div>				
+					<div class="post post1 post-411" frag="窗口411">			
+						<div class="con tu_text imgcon">
+							<div id="wp_news_w411"> 
+								<ul class="news_list clearfix">
+									
+									<li class="news n1" data-img="/_upload/article/images/3b/45/f59981994b46805f4ab827fdd209/c93f9d8f-f6ae-4697-a34d-b031858173f3.jpg">
+										<a class="news_box" href="/2018/1211/c17407a254419/page.htm" target="_blank">
+										<div class="news_wz">
+											<p class="news_title">【交汇点】“南京眼”、“土楼”穿上身“2018东南大学新生文化季”闭...</p>
+											<p class="news_time">2018-12-11</p>
+										</div>
+										</a>
+									</li>
+									
+									<li class="news n2" data-img="/_upload/article/images/d4/39/d1311d464603b4a8beeb8366d574/a4d8e416-382d-46db-b86e-8018e25b1577.jpg">
+										<a class="news_box" href="/2018/1212/c17407a254666/page.htm" target="_blank">
+										<div class="news_wz">
+											<p class="news_title">【中新网】国家公祭日前夜 南京大学生点亮烛光悼念遇难同胞</p>
+											<p class="news_time">2018-12-12</p>
+										</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+						<div class="more_btn" frag="按钮" type="更多" link="http://news.seu.edu.cn/5485/list.htm">                                      <a href="http://news.seu.edu.cn/5485/list.htm" class="w411_more"><span class="more_text" frag="按钮内容">更多</span></a></div>
+					</div>					
+				</div>
+				<div class="modc2" frag="面板42">
+					<div class="post post1 post-42" frag="窗口42">
+						<div class="tt">
+							<h3 class="tit"><span class="title" frag="标题" title="科学研究">                                科学研究</span> </h3>
+						</div>					
+						<div class="con tu_text">
+							<div id="wp_news_w42"> 
+								<ul class="news_list clearfix">
+									
+									<li class="news n1">
+										<a class="news_box" href="/2018/1214/c17409a254883/page.htm"target="_blank">
+											<div class="news_imgs">
+												<image src='/_upload/article/images/ad/f0/a1f637e74a07874f68eb9bef0593/8abea7f7-05b5-480f-acee-bf49c05ac235.jpg' width='300' height='200'>
+											</div>
+											<div class="news_wz">
+												<p class="news_title">东南大学张川副教授课题组在合成生物学实现信道译码研究中取得新进展</p>
+												<p class="news_time">2018-12-14</p>
+												<p class="news_text">近日，东南大学信息科学与工程学院、量子信息研究中心张川副教授课题组利用分子反应网络成功实现了LDPC译码，相关研究成果以“AU...</p>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+					</div>				
+					<div class="post post1 post-421" frag="窗口421">			
+						<div class="con tu_text imgcon">
+							<div id="wp_news_w421"> 
+								<ul class="news_list clearfix">
+									
+									<li class="news n1" data-img="/_upload/article/images/ad/f0/a1f637e74a07874f68eb9bef0593/8abea7f7-05b5-480f-acee-bf49c05ac235.jpg">
+										<a class="news_box" href="/2018/1214/c17409a254883/page.htm" target="_blank">
+										<div class="news_wz">
+											<p class="news_title">东南大学张川副教授课题组在合成生物学实现信道译码研究中取得新进展</p>
+											<p class="news_time">2018-12-14</p>
+										</div>
+										</a>
+									</li>
+									
+									<li class="news n2" data-img="/_upload/article/images/86/fa/6d8b58bb400ca4b3cd2dfbeaaaa9/8698ec11-668d-4ceb-8a52-748f265c64e1.jpg">
+										<a class="news_box" href="/2018/1212/c17409a254554/page.htm" target="_blank">
+										<div class="news_wz">
+											<p class="news_title">东南大学滕皋军教授及其团队参加GEST Asia 2018大会</p>
+											<p class="news_time">2018-12-12</p>
+										</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+						<div class="more_btn" frag="按钮" type="更多"><a href="/kxyjwsyw/list.htm" class="w421_more"><span class="more_text" frag="按钮内容">更多</span></a></div>
+					</div>					
+				</div>								
+				<div class="modr2">
+					<div class="post post1 post-43" frag="窗口43">
+						<div class="tt">
+							<h3 class="tit"><span class="title" frag="标题">人物风采</span> </h3>
+						</div>					
+						<div class="con tu_text">
+							<div id="wp_news_w43"> 
+								<ul class="news_list clearfix">
+									
+									<li class="news n1">
+										<a class="news_box" href="/2018/1101/c17408a244570/page.htm"target="_blank">
+											<div class="news_imgs">
+												<image src='/_upload/article/images/00/42/c500dd854ddc887f2b61c478da7c/6bded846-0273-4714-a512-55e02ee2e86a.jpg' width='300' height='200'>
+											</div>
+											<div class="news_wz">
+												<p class="news_title">专注旅游 敦德为牛 ———记我校杰出校友、途牛旅游网 CEO 于敦德</p>
+												<p class="news_time">2018-11-01</p>
+												<p class="news_text">古往今来，游遍大好河山一直是人们心中的夙愿。随着交通技术的不断发展，“一场说走就走的旅行”不再是难事，旅游也逐渐成为人们...</p>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+					</div>				
+					<div class="post post1 post-431" frag="窗口431">			
+						<div class="con tu_text imgcon">
+							<div id="wp_news_w431"> 
+								<ul class="news_list clearfix">
+									
+									<li class="news n1" data-img="/_upload/article/images/00/42/c500dd854ddc887f2b61c478da7c/6bded846-0273-4714-a512-55e02ee2e86a.jpg">
+										<a class="news_box" href="/2018/1101/c17408a244570/page.htm"target="_blank" >
+										<div class="news_wz">
+											<p class="news_title">专注旅游 敦德为牛 ———记我校杰出校友、途牛旅游网 CEO 于敦德</p>
+											<p class="news_time">2018-11-01</p>
+										</div>
+										</a>
+									</li>
+									
+									<li class="news n2" data-img="/_upload/article/images/7d/3b/b2a0c6064338acc3ccbeaad5bc99/fcb5a932-16b1-4569-808b-9ebd5ddfcbbb.jpg">
+										<a class="news_box" href="/2018/0930/c17408a241987/page.htm"target="_blank" >
+										<div class="news_wz">
+											<p class="news_title">万物互联创业三宝——访三宝科技董事长沙敏校友</p>
+											<p class="news_time">2018-11-01</p>
+										</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+						<div class="more_btn" frag="按钮" type="更多" link="http://news.seu.edu.cn/5513/list.htm">                                     <a href="http://news.seu.edu.cn/5513/list.htm" class="w431_more"><span class="more_text" frag="按钮内容">更多</span></a></div>
+					</div>					
+				</div>				
+				<div class="clear mb"></div>
+				<div class="modl" frag="面板21">
+					<div class="post post1 post-21" frag="窗口21">
+						<div class="tt">
+							<h3 class="tit"><span class="title" frag="标题">学术报告和文化活动</span> </h3>
+						</div>
+						<div class="con">
+							<div id="wp_news_w21"> 
+
+								<ul class="news_list clearfix">
+									<li class="news n0">
+										<span class="news_time">时间</span><span class="news_title">活动内容</span>
+									</li>
+									
+									<li class="news n1">
+										<span class="news_time">2018-12-09</span><span class="news_title"><a href='/_redirect?siteId=2&columnId=138&articleId=253985' target='_blank' title='“2018东南大学新生文艺汇演” 12月11日晚隆重上演'>“2018东南大学新生文艺汇演” 12月11日晚隆重上演</a></span>
+									</li>
+									
+									<li class="news n2">
+										<span class="news_time">2018-12-03</span><span class="news_title"><a href='/_redirect?siteId=2&columnId=138&articleId=253201' target='_blank' title='能源与环境学院吕锡武教授做水环境生态修复的专题讲座'>能源与环境学院吕锡武教授做水环境生态修复的专题讲座</a></span>
+									</li>
+									
+									<li class="news n3">
+										<span class="news_time">2018-11-30</span><span class="news_title"><a href='/_redirect?siteId=2&columnId=138&articleId=248137' target='_blank' title='“伦理共识与人类道德发展”国际会议暨纪念改革开放40周年“中国伦理道德发展数据库与研究报告”发布会'>“伦理共识与人类道德发展”国际会议暨纪念改革开放40...</a></span>
+									</li>
+									
+									<li class="news n4">
+										<span class="news_time">2018-11-30</span><span class="news_title"><a href='/_redirect?siteId=2&columnId=138&articleId=248136' target='_blank' title='长江学者智库论坛预告：新时代的中国道德发展'>长江学者智库论坛预告：新时代的中国道德发展</a></span>
+									</li>
+									
+									<li class="news n5">
+										<span class="news_time">2018-11-21</span><span class="news_title"><a href='/_redirect?siteId=2&columnId=138&articleId=246830' target='_blank' title='《吴健雄传》作者江才健精彩演讲“物理科学第一夫人——吴健雄”'>《吴健雄传》作者江才健精彩演讲“物理科学第一夫人——...</a></span>
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+						<div class="more_btn" frag="按钮" type="更多"> <a href="/138/list.htm" class="w21_more"><span class="more_text" frag="按钮内容">更多</span></a></div>
+						
+					</div>					
+				</div>
+				<div class="modc" frag="面板22">
+					<div class="post post1 post-22" frag="窗口22">
+						<div class="tt">
+							<h3 class="tit"><span class="title" frag="标题" title="信息公告">                                 信息公告</span> </h3>
+						</div>
+						<div class="con ">
+							<div id="wp_news_w22"> 
+
+								<ul class="news_list clearfix">
+									
+									<li class="news n1">
+									
+										<div class="news_wz">
+											<p class="news_title"><a href='/_redirect?siteId=2&columnId=17765&articleId=253745' target='_blank' title='关于2018年东南大学教育基金会奖助项目发放的通知1206'>关于2018年东南大学教育基金会奖助项目...</a></p>
+											<p class="news_time">2018-12-06</p>
+										</div>
+									
+									</li>
+									
+									<li class="news n2">
+									
+										<div class="news_wz">
+											<p class="news_title"><a href='/_redirect?siteId=2&columnId=17765&articleId=248454' target='_blank' title='我自豪！我为江宁开发区代言！'>我自豪！我为江宁开发区代言！</a></p>
+											<p class="news_time">2018-11-30</p>
+										</div>
+									
+									</li>
+									
+									<li class="news n3">
+									
+										<div class="news_wz">
+											<p class="news_title"><a href='/_redirect?siteId=2&columnId=17765&articleId=246437' target='_blank' title='科研院:中国科协优秀中外青年交流计划的通知'>科研院:中国科协优秀中外青年交流计划...</a></p>
+											<p class="news_time">2018-11-19</p>
+										</div>
+									
+									</li>
+									
+									<li class="news n4">
+									
+										<div class="news_wz">
+											<p class="news_title"><a href='/_redirect?siteId=2&columnId=17765&articleId=243454' target='_blank' title='2018年度江苏省社会科学基金重大项目招标公告'>2018年度江苏省社会科学基金重大项目招...</a></p>
+											<p class="news_time">2018-10-22</p>
+										</div>
+									
+									</li>
+									
+								</ul>
+							</div> 
+
+						</div>
+						<div class="more_btn" frag="按钮" type="更多"> <a href="/gg1/list.htm" class="w22_more"><span class="more_text" frag="按钮内容">更多</span></a></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="mr" >
+			    <div class="mcon">
+				<div class="mbox">
+					<div class="post post1 post-31" frag="窗口31">
+						<div class="con wz_link ">
+							<div id="wp_nav_w31"> 
+
+								
+								
+								<a class="iconcon i1" href="http://my.seu.edu.cn/" target="_blank">
+									<p>校园信息门户</p>
+								</a>
+								
+								<a class="iconcon i2" href="http://zhishan.seu.edu.cn/hybgzwjgxsd/list.htm" target="_blank">
+									<p>弘扬报国志 建功新时代</p>
+								</a>
+								
+								<a class="iconcon i3" href="http://xxgk.seu.edu.cn/" target="_blank">
+									<p>信息公开网</p>
+								</a>
+								
+								<a class="iconcon i4" href="http://seuaa.seu.edu.cn/" target="_blank">
+									<p>校友会</p>
+								</a>
+								
+								<a class="iconcon i5" href="http://seuef.seu.edu.cn/" target="_blank">
+									<p>教育基金会</p>
+								</a>
+								
+								<a class="iconcon i6" href="http://ddb.seu.edu.cn" target="_blank">
+									<p>东南大学报</p>
+								</a>
+								
+								<a class="iconcon i7" href="http://bbs.seu.edu.cn" target="_blank">
+									<p>虎踞龙蟠BBS</p>
+								</a>
+								
+								
+							 
+ </div>
+						</div>
+					</div>
+					
+					<div class="post post1 post-32" frag="窗口32">
+						<div class="con tu_text">
+							<div id="wp_news_w32"> 
+
+								<ul class="news_list clearfix">
+									
+										<li class="news n1">
+											<a class="news_box" href="/_redirect?siteId=2&columnId=17379&articleId=181610">
+												<div class="news_imgs">
+													<a href='/_redirect?siteId=2&columnId=17379&articleId=181610' target='_blank' title='招聘信息'><image src='/_upload/article/images/52/ed/5b98cebf47819a49b284f1bf5245/a1e13c53-c30d-4e43-9afd-9eba2d11677e_s.jpg' width='180'></a>
+												</div>
+												<div class="news_wz">
+													<p class="news_title">招聘信息</p>
+												</div>
+											</a>
+										</li>
+									
+										<li class="news n2">
+											<a class="news_box" href="/_redirect?siteId=2&columnId=17379&articleId=181609">
+												<div class="news_imgs">
+													<a href='/_redirect?siteId=2&columnId=17379&articleId=181609' target='_blank' title='网上校史馆'><image src='/_upload/article/images/82/a3/7620e2d84424b51d21a917f397bf/e0f51ef9-7e1a-460b-af41-16873a42b957_s.jpg' width='180'></a>
+												</div>
+												<div class="news_wz">
+													<p class="news_title">网上校史馆</p>
+												</div>
+											</a>
+										</li>
+									
+										<li class="news n3">
+											<a class="news_box" href="/_redirect?siteId=2&columnId=17379&articleId=181608">
+												<div class="news_imgs">
+													<a href='/_redirect?siteId=2&columnId=17379&articleId=181608' target='_blank' title='校园地图'><image src='/_upload/article/images/3f/01/a0b1625f4699901c5f99df0cbfb8/76d346de-8777-4c65-b331-45a2912d0257_s.jpg' width='180'></a>
+												</div>
+												<div class="news_wz">
+													<p class="news_title">校园地图</p>
+												</div>
+											</a>
+										</li>
+									
+								</ul>
+								
+							</div> 
+
+						</div>
+					</div>
+				</div>				
+				<div class="mbox xblink" frag="面板33">
+					<div class="postlink postlink-33 mboxlink" frag="窗口33"> 
+						<a class="tt"><span class="title" frag="标题">友情链接</span><span class="jt"></span></a>					
+						<div class="con">
+							<div id="wp_news_w33"> 
+
+								<ul class="news_list">
+									
+									<li class="news n1 clearfix"><span class="news_title"><a href='http://www.gov.cn/' target='_blank' title='中华人民共和国中央人民政府门户网站 '>中华人民共和国中央人民政府门户...</a></span></li>
+									
+									<li class="news n2 clearfix"><span class="news_title"><a href='http://www.moe.edu.cn' target='_blank' title='中华人民共和国教育部'>中华人民共和国教育部</a></span></li>
+									
+									<li class="news n3 clearfix"><span class="news_title"><a href='http://www.most.gov.cn/' target='_blank' title='中华人民共和国科学技术部'>中华人民共和国科学技术部</a></span></li>
+									
+									<li class="news n4 clearfix"><span class="news_title"><a href='http://www.xinhuanet.com/' target='_blank' title='新华网'>新华网</a></span></li>
+									
+									<li class="news n5 clearfix"><span class="news_title"><a href='http://www.people.com.cn/' target='_blank' title='人民网'>人民网</a></span></li>
+									
+									<li class="news n6 clearfix"><span class="news_title"><a href='http://www.cctv.com' target='_blank' title='中国中央电视台'>中国中央电视台</a></span></li>
+									
+									<li class="news n7 clearfix"><span class="news_title"><a href='http://www.chinaedu.edu.cn/' target='_blank' title='中国教育信息网'>中国教育信息网</a></span></li>
+									
+									<li class="news n8 clearfix"><span class="news_title"><a href='http://www.jsxiaoguo.com' target='_blank' title='江苏高校科技网'>江苏高校科技网</a></span></li>
+									
+									<li class="news n9 clearfix"><span class="news_title"><a href='http://www.jse.gov.cn/' target='_blank' title='江苏教育信息网'>江苏教育信息网</a></span></li>
+									
+								</ul>
+							</div> 
+
+						</div>
+					</div>					
+				</div>	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--底部开始-->
+<footer class="wrapper footer" id="footer">
+	<div class="inner clearfix">
+		<div class="foot-left">
+			<p class="copyright"><span>Copyright &copy; Southeast University E-mail:master@seu.edu.cn</span></p>
+			<p class="tel"><span><a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备10088665号</a></span></p>
+			<p class="address"><span>公安备案号:</span><span>32010202010062</span></p>
+		</div>
+		<div class="foot-right" id="bdshare">
+			<ul class="shares">
+				<li class="share n2 "><div class="con"><img src="/_upload/tpl/04/82/1154/template1154/img/er1.jpg"/></div><a href="javascript:;" class="sharename" data-cmd="tsina"></a><span>团委公众号</span></li>
+				<li class="share n3 "><div class="con"><img src="/_upload/tpl/04/82/1154/template1154/img/er2.jpg"/></div><a href="javascript:;" class="sharename" ></a><span>学校公众号</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!--//底部结束-->
+<script type="text/javascript" src="/_upload/tpl/04/82/1154/template1154/js/keepPosition.js"></script>
+<script type="text/javascript" src="/_upload/tpl/04/82/1154/template1154/js/comcus.js"></script>
+<script type="text/javascript" src="/_upload/tpl/04/82/1154/template1154/js/main.js"></script>
+<script type="text/javascript" src="/_upload/tpl/04/82/1154/template1154/js/app.js"></script>
+<script type="text/javascript">
+$(function(){
+	// 初始化SDAPP
+	new SDAPP({
+		"menu":{
+			type:"aside,slide"
+		}
+	});
+});
+</script>
+</body>
+</html>
+
+ <image src="/_visitcount?siteId=2&type=1&columnId=1" style="display:none" width="0" height="0"></image>
